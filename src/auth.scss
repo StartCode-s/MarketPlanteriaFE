@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#auth {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(/dist/assets/img/authBackgroundIcon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        position: absolute;
+        z-index: 1;
+        bottom: -40%;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        height: 80%;
+        padding: 5rem 2rem 2rem 2rem;
+        .authForm {
+            width: 100%;
+            max-width: 600px;
+            background: #F6F7FB;
+            box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.0278729), 0px 0.602941px 18.0882px rgba(0, 0, 0, 0.04), 0px 0.250431px 7.51293px rgba(0, 0, 0, 0.0521271), 0px 0.090576px 2.71728px rgba(0, 0, 0, 0.08);
+            border-radius: 15px;
+            padding: 2rem;
+            form {
+                .headForm {
+                    text-align: center;
+                    padding: 2rem 0 3rem 0;
+                    color: #535353;
+                    h1 {
+                        margin-bottom: .7rem;
+                        font-weight: 600;
+                    }
+                }
+                .bodyForm {
+                    color: #535353;
+                    .inputForm {
+                        position: relative;
+                        .icon {
+                            position: absolute;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            left: 15px;
+                            label {
+                                display: flex;
+                                align-items: center;
+                                img {
+                                    width: 100%;
+                                    max-width: 18px;
+                                }
+                            }
+                        }
+                        .form-control {
+                            background: transparent;
+                            border: 1px solid rgba(124, 122, 122, 0.5);
+                            border-radius: 10px;
+                            width: 100%;
+                            padding: 1rem 3rem;
+                            position: relative;
+                            font-weight: 300;
+                        }
+
+                        .wrapperToggle {
+                            position: absolute;
+                            right: 20px;
+                            display: flex;
+                            align-items: center;
+                            height: 100%;
+                            z-index: 3;
+                            i {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .link {
+                        text-align: end;
+                        a {
+                            color: #535353;
+                            font-weight: 300;
+                            text-decoration: underline;
+                        }
+                    }
+                    .wrapperButton {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .button {
+                            background: #2DB878;
+                            color: #fff;
+                            font-weight: 600;
+                            width: 100%;
+                            max-width: 300px;
+                            padding: .7rem 1rem;
+                            border-radius: 50px;
+                            box-shadow: none;
+                            border: none;
+                        }
+                    }
+                    .toSignUppage {
+                        text-align: center;
+                        font-weight: 300;
+                        a {
+                            text-decoration: underline;
+                            color: #535353;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+@media screen and (max-width : 576px) {
+    .bodyForm {
+        font-size: 12px !important;
+        .inputForm {
+            .form-control {
+                font-size: 12px !important;
+            }
+        }
+    }
+}
