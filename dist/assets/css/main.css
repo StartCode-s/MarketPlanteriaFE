@@ -147,25 +147,16 @@ Resset Css
   flex-direction: column;
 }
 
-#mainContent .bestOfferContainer .header-line {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #535353;
-  font-weight: 500;
-  margin-bottom: .8rem;
-}
-
-#mainContent .bestOfferContainer .header-line img {
-  width: 100%;
-  max-width: 32px;
-  margin-right: .5rem;
-}
-
 #mainContent .bestOfferContainer .bestOfferProduct {
   display: flex;
   width: 100%;
   /* the parent */
+}
+
+#mainContent .bestOfferContainer .bestOfferProduct .product {
+  margin: 0 !important;
+  height: 100%;
+  transform: none;
 }
 
 #mainContent .bestOfferContainer .bestOfferProduct .slick-slide {
@@ -174,6 +165,31 @@ Resset Css
 
 #mainContent .bestOfferContainer .bestOfferProduct .slick-list {
   margin: 0 -.6rem;
+}
+
+#mainContent .requestPlant .requestWrapper h1 {
+  color: #535353;
+  font-weight: 600;
+}
+
+#mainContent .requestPlant .requestWrapper .form-control {
+  padding: 14px 18px;
+  margin: 1.4rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#mainContent .requestPlant .requestWrapper .form-control::placeholder {
+  font-weight: 300;
+}
+
+#mainContent .requestPlant .requestWrapper .form-control:focus {
+  border-color: #2DB878;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(45, 184, 120, 0.5);
+}
+
+#mainContent .requestPlant .imagesContent img {
+  width: 100%;
+  height: 100%;
 }
 
 /*Responsive Banner*/
@@ -223,5 +239,11 @@ Resset Css
   /* the parent */
   .slick-list {
     margin: 0 -.4rem !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .requestPlant .requestWrapper .form-control::placeholder {
+    font-size: 12px;
   }
 }

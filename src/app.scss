@@ -24,6 +24,8 @@ $secondary-color :#F6F7FB;
   font-weight: 500;
   width: fit-content;
   vertical-align: middle;
+  padding: 4px 12px;
+  text-align: center;
 
   /*Style Button*/
   &.button-primary {
@@ -55,9 +57,14 @@ $secondary-color :#F6F7FB;
   }
   &.button-outline-primary {
     border: 1px solid $primary-color;
+    background-color: $white-color;
     color: $primary-color;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
     &:hover {
       background-color: $primary-color;
+      color: $white-color;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
     }
   }
   &.button-outline-danger {
@@ -118,12 +125,18 @@ $secondary-color :#F6F7FB;
 
 /*Product Card*/
 .product {
-  display: block;
+  display: block !important;
   background-color: $secondary-color;
   text-decoration: none;  
   border-radius: 15px;
   width: 100%;
-  height: 100%;
+  margin: .7rem 0;
+  transition: transform .3s ease-in-out;
+  &:hover {
+    // box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.04), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0238443), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.02), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0112458);
+    transform: scale(1.03);
+    transition: transform .3s ease-in-out;
+  }
   .imagesProduct {
     width: 100%;
     img {
@@ -197,6 +210,24 @@ $secondary-color :#F6F7FB;
 }
 
 //Line Margin Component {
-  .line {
-    margin-top: 64px;
+.line {
+  margin-top: 64px;
+}
+//Header Title Page With Icon
+.header-line {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $font-dark-color;
+  font-weight: 500;
+  margin-bottom: .8rem;
+  font-size: 18px;
+  &:hover {
+    color: $font-dark-color;
   }
+  img {
+      width: 100%;
+      max-width: 32px;
+      margin-right: .5rem;
+  }
+}
