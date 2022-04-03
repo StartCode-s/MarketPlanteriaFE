@@ -133,7 +133,6 @@ $secondary-color :#F6F7FB;
   margin: .7rem 0;
   transition: transform .3s ease-in-out;
   &:hover {
-    // box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.04), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0238443), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.02), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0112458);
     transform: scale(1.03);
     transition: transform .3s ease-in-out;
   }
@@ -153,12 +152,13 @@ $secondary-color :#F6F7FB;
       color: $font-dark-color;
       font-weight: 400;
       font-size: 16px;
-      &:not(:last-child) {
-        margin-bottom: .5rem;
+      &.nameProduct{
+        margin-bottom: 4px;
       }
       &.price {
         color:$primary-color;
         font-weight: 500;
+        margin-bottom: 16px;
         font-size: 18px;
       }
       &.rating {
@@ -168,7 +168,7 @@ $secondary-color :#F6F7FB;
         align-items: center;
         img {
           width: 100%;
-          max-width: 22px;
+          max-width: 18px;
           margin-right: .2rem
         }
       }
@@ -195,11 +195,8 @@ $secondary-color :#F6F7FB;
     .infoProduct {
       p {
         font-size: 12px;
-        &:not(:last-child) {
-          margin-bottom: .2rem;
-        }
         &.price {
-          font-size: 12px;
+          font-size: 16px;
         }
         &.rating {
           font-size: 10px;

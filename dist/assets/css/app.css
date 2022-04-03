@@ -171,13 +171,14 @@ Resset Css
   font-size: 16px;
 }
 
-.product .infoProduct p:not(:last-child) {
-  margin-bottom: .5rem;
+.product .infoProduct p.nameProduct {
+  margin-bottom: 4px;
 }
 
 .product .infoProduct p.price {
   color: #2DB878;
   font-weight: 500;
+  margin-bottom: 16px;
   font-size: 18px;
 }
 
@@ -190,7 +191,7 @@ Resset Css
 
 .product .infoProduct p.rating img {
   width: 100%;
-  max-width: 22px;
+  max-width: 18px;
   margin-right: .2rem;
 }
 
@@ -210,11 +211,8 @@ Resset Css
   .product .infoProduct p {
     font-size: 12px;
   }
-  .product .infoProduct p:not(:last-child) {
-    margin-bottom: .2rem;
-  }
   .product .infoProduct p.price {
-    font-size: 12px;
+    font-size: 16px;
   }
   .product .infoProduct p.rating {
     font-size: 10px;
