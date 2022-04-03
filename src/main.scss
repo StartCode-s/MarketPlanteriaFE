@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Colors palette*/
+$primary-color : #2DB878;
+$white-color : #fff;
+$danger-color : #F2453D;
+$font-dark-color :#535353;
+$secondary-color :#F6F7FB;
+
+
+#mainContent {
+    .bannerSection {
+      position: relative;
+      .wrapperBanner {
+        display: flex;
+        align-items: center;
+        .banner {
+          img {
+            width: 100%;
+            transform: scale(.9);
+            transition: transform .5s ease;
+            border-radius: 10px;
+          }
+        }
+        .slick-center {
+          .banner {
+            img {
+              transform: scale(1);
+              transition: transform .5s ease;
+            }
+          }
+        }
+      }
+      .slick-slider-dots{
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        width: 100%;
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+              margin: 0 4px;
+              display: flex;
+              width: fit-content;
+              justify-content: center;
+              align-items: center;
+              button {
+                  background: rgb(162, 162, 162);
+                  height: 8px;
+                  width: 8px;
+                  overflow: hidden;
+                  color: rgb(162, 162, 162);
+                  border: none;
+                  border-radius: 50%;
+                  transition: all .3s ease;
+  
+                  &::before {
+                      display: none;
+                  }
+              }
+              &.slick-active {
+                  button {
+                      background: $primary-color;
+                      color: $primary-color;
+                      width: 28px;
+                      border-radius: 10px;
+                      transition: all .3s ease;
+                  }
+              }
+          }
+        }
+      }
+    }
+    .categoriesContainer {
+        background-color: $secondary-color;
+        border-radius: 15px;
+        padding: 1rem;
+        height: 100%;
+        h4 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: $font-dark-color;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 25%;
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                border-radius: 10px;
+                background-color: $primary-color;
+                height: 2px;
+                transform: translate(-50%,50%);
+            }
+        }
+        .wrapperCategories {
+            margin: 1.4rem 0;
+            overflow-y: scroll;
+            max-height: 300px;
+            .categoriesPlant {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                margin: .6rem 0;
+                .imagesCategories {
+                    margin-right: .3rem;
+                    img {
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 50%;
+                        width: 100%;
+                        max-width: 34px;
+                        max-height: 34px;
+                    }
+                }
+                .nameCategories {
+                    color: $font-dark-color;
+                    display: flex;
+                    span {
+                        margin-left: .2rem;
+                        color: $font-dark-color !important;
+                    }
+                }
+            }
+        }
+    }
+    .bestOfferContainer {
+        display: flex;
+        flex-direction: column;
+        .header-line {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $font-dark-color;
+            font-weight: 500;
+            margin-bottom: .8rem;
+            img {
+                width: 100%;
+                max-width: 32px;
+                margin-right: .5rem;
+            }
+        }
+        .bestOfferProduct {
+            display: flex;
+            width: 100%;
+            .slick-slide {
+                margin: 0 .6rem;
+            }
+            /* the parent */
+            .slick-list {
+                margin: 0 -.6rem;
+            }
+        }
+    }
+}
+/*Responsive Banner*/
+@media screen and (max-width :475px) {
+    #mainContent {
+        .bannerSection {
+          .wrapperBanner {
+            .banner {
+                padding: 0 .5rem;
+              img {
+                transform: scale(1);
+              }
+            }
+          }
+          .slick-slider-dots{
+            ul {
+              li {
+                  margin: 0 2px;
+                  button {
+                      height: 8px;
+                      width: 8px;
+                      padding: 4px;
+                  }
+                  &.slick-active {
+                      button {
+                          width: 28px;
+                      }
+                  }
+              }
+            }
+          }
+        }
+    }
+}
+//Responsive categories
+@media screen and (max-width : 992px) {
+    #mainContent {
+        .categoriesContainer {
+            .wrapperCategories {
+                overflow-y: scroll;
+                max-height: 200px;
+                .categoriesPlant {
+                    .imagesCategories {
+                        img {
+                            min-width: 32px;
+                        }
+                    }
+                    .nameCategories {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 576px) {
+    #mainContent {
+        .categoriesContainer {
+            .wrapperCategories {
+                .categoriesPlant {
+                    .nameCategories {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Responsive bestOffer
+@media screen and (max-width :576px) {
+    .slick-slide {
+        margin: 0 .4rem !important;
+    }
+    /* the parent */
+    .slick-list {
+        margin: 0 -.4rem !important;
+    }
+}

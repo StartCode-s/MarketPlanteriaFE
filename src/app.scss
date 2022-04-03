@@ -9,3 +9,194 @@ Resset Css
   outline: none;
   font-family: 'Poppins', sans-serif;
 }
+
+/*Colors palette*/
+$primary-color : #2DB878;
+$white-color : #fff;
+$danger-color : #F2453D;
+$font-dark-color :#535353;
+$secondary-color :#F6F7FB;
+
+/*Component Button*/
+.button {
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  width: fit-content;
+  vertical-align: middle;
+
+  /*Style Button*/
+  &.button-primary {
+    background-color: $primary-color;
+    color: $white-color;
+    transition: background-color .3s ease;
+    &:hover {
+      background-color: #2aab6f;
+      transition: background-color .3s ease;
+    }
+  }
+  &.button-danger {
+    background-color: $danger-color;
+    color: $white-color;
+    transition: background-color .15s ease-in-out;
+    &:hover {
+      background-color: #E33B3B;
+      transition: background-color .15s ease-in-out;
+    }
+  }
+  &.button-outline {
+    background-color: $white-color;
+    border: 1px solid $primary-color;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    &:hover {
+      color: $white-color;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
+  }
+  &.button-outline-primary {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+  &.button-outline-danger {
+    border: 1px solid $danger-color;
+    background-color: transparent;
+    color: $danger-color;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    &:hover {
+      background-color: $danger-color;
+    }
+  }
+  &.button-ghost {
+    color: $primary-color;
+    background-color: transparent;
+    transition: color .2s ease;
+    &:hover {
+      color: #28a26a;
+      transition: color .2s ease;
+    }
+  }
+  &.button-link {
+    color: $primary-color;
+  }
+  &.button-text {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background-color: transparent;
+    color: $primary-color;
+  }
+  &.button-radius {
+    border-radius: 9999px;
+  }
+
+  /*Size Button*/
+  &.xs-button {
+    padding: 7px 16px;
+    font-size: 10px;
+  }
+  &.sm-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  &.md-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+  &.xl-button {
+    padding: 8px 16px;
+    font-size: 20px;
+  }
+  &.disabled {
+    pointer-events: none;
+    opacity: .65;
+  }
+}
+
+
+
+/*Product Card*/
+.product {
+  display: block;
+  background-color: $secondary-color;
+  text-decoration: none;  
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  .imagesProduct {
+    width: 100%;
+    img {
+      width: 100%;
+      max-height: 240px;
+      border-radius: 15px 15px 0 0;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .infoProduct {
+    padding: 1rem;
+    p {
+      color: $font-dark-color;
+      font-weight: 400;
+      font-size: 16px;
+      &:not(:last-child) {
+        margin-bottom: .5rem;
+      }
+      &.price {
+        color:$primary-color;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      &.rating {
+        font-size: 14px;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        img {
+          width: 100%;
+          max-width: 22px;
+          margin-right: .2rem
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width : 768px) {
+  .product {
+    .infoProduct {
+      p {
+        font-size: 14px;
+        &.price {
+          font-size: 16px;
+        }
+        &.rating {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width : 576px) {
+  .product {
+    .infoProduct {
+      p {
+        font-size: 12px;
+        &:not(:last-child) {
+          margin-bottom: .2rem;
+        }
+        &.price {
+          font-size: 12px;
+        }
+        &.rating {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+//Line Margin Component {
+  .line {
+    margin-top: 64px;
+  }
