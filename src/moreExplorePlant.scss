@@ -29,6 +29,14 @@ $secondary-color :#F6F7FB;
             object-position: center;
         }
     }
+    .relativeContainer {
+        position: relative;
+        height: 100%;
+        .categoriesContainer {
+            position: sticky !important;
+            top: 124px;
+        }
+    }
 }
 
 @media screen and (max-width : 992px) {

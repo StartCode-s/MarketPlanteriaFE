@@ -23,6 +23,16 @@ Resset Css
   object-position: center;
 }
 
+#mainContent .relativeContainer {
+  position: relative;
+  height: 100%;
+}
+
+#mainContent .relativeContainer .categoriesContainer {
+  position: sticky !important;
+  top: 124px;
+}
+
 @media screen and (max-width: 992px) {
   #mainContent .wrapperJumbotron {
     margin-top: 150px;
