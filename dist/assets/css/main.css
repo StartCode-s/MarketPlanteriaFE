@@ -182,11 +182,6 @@ Resset Css
   font-weight: 300;
 }
 
-#mainContent .requestPlant .requestWrapper .form-control:focus {
-  border-color: #2DB878;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(45, 184, 120, 0.5);
-}
-
 #mainContent .requestPlant .imagesContent img {
   width: 100%;
   height: 100%;
