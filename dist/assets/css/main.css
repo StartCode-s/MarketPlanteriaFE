@@ -79,69 +79,6 @@ Resset Css
   transition: all .3s ease;
 }
 
-#mainContent .categoriesContainer {
-  background-color: #F6F7FB;
-  border-radius: 15px;
-  padding: 1rem;
-  height: 100%;
-}
-
-#mainContent .categoriesContainer h4 {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #535353;
-  position: relative;
-}
-
-#mainContent .categoriesContainer h4::after {
-  content: '';
-  display: block;
-  width: 25%;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  border-radius: 10px;
-  background-color: #2DB878;
-  height: 2px;
-  transform: translate(-50%, 50%);
-}
-
-#mainContent .categoriesContainer .wrapperCategories {
-  margin: 1.4rem 0;
-  overflow-y: scroll;
-  max-height: 300px;
-}
-
-#mainContent .categoriesContainer .wrapperCategories .categoriesPlant {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  margin: .6rem 0;
-}
-
-#mainContent .categoriesContainer .wrapperCategories .categoriesPlant .imagesCategories {
-  margin-right: .3rem;
-}
-
-#mainContent .categoriesContainer .wrapperCategories .categoriesPlant .imagesCategories img {
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
-  width: 100%;
-  max-width: 34px;
-  max-height: 34px;
-}
-
-#mainContent .categoriesContainer .wrapperCategories .categoriesPlant .nameCategories {
-  color: #535353;
-  display: flex;
-}
-
-#mainContent .categoriesContainer .wrapperCategories .categoriesPlant .nameCategories span {
-  margin-left: .2rem;
-  color: #535353 !important;
-}
-
 #mainContent .bestOfferContainer {
   display: flex;
   flex-direction: column;
@@ -205,25 +142,6 @@ Resset Css
   }
   #mainContent .bannerSection .slick-slider-dots ul li.slick-active button {
     width: 28px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #mainContent .categoriesContainer .wrapperCategories {
-    overflow-y: scroll;
-    max-height: 200px;
-  }
-  #mainContent .categoriesContainer .wrapperCategories .categoriesPlant .imagesCategories img {
-    min-width: 32px;
-  }
-  #mainContent .categoriesContainer .wrapperCategories .categoriesPlant .nameCategories {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #mainContent .categoriesContainer .wrapperCategories .categoriesPlant .nameCategories {
-    font-size: 12px;
   }
 }
 

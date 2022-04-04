@@ -86,61 +86,6 @@ $secondary-color :#F6F7FB;
         }
       }
     }
-    .categoriesContainer {
-        background-color: $secondary-color;
-        border-radius: 15px;
-        padding: 1rem;
-        height: 100%;
-        h4 {
-            text-align: center;
-            margin-bottom: 1rem;
-            color: $font-dark-color;
-            position: relative;
-
-            &::after {
-                content: '';
-                display: block;
-                width: 25%;
-                position: absolute;
-                bottom: -10px;
-                left: 50%;
-                border-radius: 10px;
-                background-color: $primary-color;
-                height: 2px;
-                transform: translate(-50%,50%);
-            }
-        }
-        .wrapperCategories {
-            margin: 1.4rem 0;
-            overflow-y: scroll;
-            max-height: 300px;
-            .categoriesPlant {
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                margin: .6rem 0;
-                .imagesCategories {
-                    margin-right: .3rem;
-                    img {
-                        object-fit: cover;
-                        object-position: center;
-                        border-radius: 50%;
-                        width: 100%;
-                        max-width: 34px;
-                        max-height: 34px;
-                    }
-                }
-                .nameCategories {
-                    color: $font-dark-color;
-                    display: flex;
-                    span {
-                        margin-left: .2rem;
-                        color: $font-dark-color !important;
-                    }
-                }
-            }
-        }
-    }
     .bestOfferContainer {
         display: flex;
         flex-direction: column;
@@ -213,40 +158,6 @@ $secondary-color :#F6F7FB;
               }
             }
           }
-        }
-    }
-}
-//Responsive categories
-@media screen and (max-width : 992px) {
-    #mainContent {
-        .categoriesContainer {
-            .wrapperCategories {
-                overflow-y: scroll;
-                max-height: 200px;
-                .categoriesPlant {
-                    .imagesCategories {
-                        img {
-                            min-width: 32px;
-                        }
-                    }
-                    .nameCategories {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width : 576px) {
-    #mainContent {
-        .categoriesContainer {
-            .wrapperCategories {
-                .categoriesPlant {
-                    .nameCategories {
-                        font-size: 12px;
-                    }
-                }
-            }
         }
     }
 }
