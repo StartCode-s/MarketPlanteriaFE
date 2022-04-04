@@ -412,6 +412,7 @@ input[type="color"]:focus,
 
 .product .imagesProduct img {
   width: 100%;
+  min-height: 200px;
   max-height: 240px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
