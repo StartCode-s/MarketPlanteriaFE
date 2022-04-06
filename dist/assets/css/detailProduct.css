@@ -220,6 +220,32 @@ Resset Css
   max-height: 22px;
 }
 
+.descripsi-product {
+  margin-top: 1.4rem;
+}
+
+.descripsi-product p {
+  font-weight: 400;
+}
+
+.descripsi-product .primary-text {
+  font-weight: 600;
+}
+
+.descripsi-product .desc-section {
+  padding: 1.4rem 0 0 0;
+}
+
+.descripsi-product .desc-section p {
+  margin-bottom: .5rem;
+}
+
+.descripsi-product .desc-section .text-desc {
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 0px) {
   .wrapperDetailProduct .wrapper-detail-product .name-product {
     font-size: 24px;

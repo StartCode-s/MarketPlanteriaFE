@@ -776,3 +776,29 @@ input[type="color"]:focus,
   border: none;
   padding: 1rem;
 }
+
+.nav-tabs .nav-link {
+  color: #A5A6A9;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  color: #2DB878;
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid #2DB878;
+}
+
+.tab-content .tab-pane {
+  padding: 1.4rem 0;
+}
+
+.primary-text {
+  color: #2DB878;
+}

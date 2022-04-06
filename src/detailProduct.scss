@@ -218,6 +218,27 @@ $secondary-color :#F6F7FB;
         }
     }
 }
+.descripsi-product {
+    margin-top: 1.4rem;
+    p {
+        font-weight: 400;
+    }
+    .primary-text {
+        font-weight: 600;
+    }
+    .desc-section {
+        padding: 1.4rem 0 0 0;
+        p {
+            margin-bottom: .5rem;
+        }
+        .text-desc {
+            line-height: 24px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+    }
+}
+
 @media screen and (min-width : 0px) {
     .wrapperDetailProduct {
         .wrapper-detail-product {
