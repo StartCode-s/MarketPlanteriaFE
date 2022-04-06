@@ -142,6 +142,17 @@ input[type="color"]:focus,
   box-shadow: 0 0 0 0.2rem rgba(43, 203, 80, 0.25);
   outline: 1 none;
 }
+input[type="checkbox"]:checked{
+  border: 1px solid $primary-color;
+  background-color: $primary-color;
+}
+input[type="checkbox"]:hover{
+  box-shadow: 0 0 0 0.2rem rgba(45, 184, 120, 0.25);
+}
+input[type="checkbox"]:focus{
+  box-shadow: 0 0 0 0.2rem rgba(45, 184, 120, 0.25);
+}
+
 
 //Navbar Component
 #navbar {
@@ -799,8 +810,44 @@ input[type="color"]:focus,
       padding: 1.4rem 0 ;
     }
   }
+  @media screen and (max-width : 576px) {
+    .nav-tabs {
+      .nav-link {
+        font-size: 14px;
+      }
+    }
+  }
 
   //primaryText
   .primary-text {
     color: $primary-color;
   }
+
+  //alert 
+  .alert {
+    border-radius: 8px;
+    color: $font-dark-color;
+    display: flex;
+    align-items: center;
+    .icon-alert {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 6px;
+      img {
+        width: 100%;
+        max-width: 20px;
+        max-height: 20px;
+      }
+    }
+    &.alert-success {
+      background-color: #E2F9EE;
+      border: 1px solid #2DB878;
+    }
+  }
+  @media screen and (max-width :576px) {
+    .alert {
+      font-size: 12px;
+    }
+  }
+  
