@@ -129,6 +129,7 @@ Resset Css
 
 .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product .quantity-product .quantity-count {
   padding: 0 1rem;
+  color: #535353;
 }
 
 .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product .quantity-product .product-quantity {
@@ -243,27 +244,8 @@ Resset Css
 }
 
 @media screen and (min-width: 0px) {
-  .wrapperDetailProduct .wrapper-detail-product .name-product {
-    font-size: 24px;
-  }
-  .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .data-terjual p, .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product p {
-    font-size: 14px;
-  }
-  .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .data-terjual span, .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product span {
-    font-size: 14px;
-  }
-  .wrapperDetailProduct .wrapper-detail-product .price-product p {
-    font-size: 24px;
-  }
-  .wrapperDetailProduct .wrapper-detail-product .price-product span {
-    font-size: 18px;
-  }
-  .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product .info {
-    font-size: 14px;
-  }
   .wrapper-summary .card {
-    position: sticky;
-    top: 0;
+    position: relative;
   }
   .wrapper-summary .card .detail-summary .total-order p, .wrapper-summary .card .detail-summary .total-price p {
     font-size: 14px;
@@ -285,24 +267,87 @@ Resset Css
   }
 }
 
+@media screen and (max-width: 576px) {
+  .wrapperDetailProduct .wrapper-detail-product .name-product {
+    font-size: 20px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .data-terjual p, .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product p {
+    font-size: 12px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .data-terjual span, .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product span {
+    font-size: 12px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .price-product p {
+    font-size: 24px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .price-product span {
+    font-size: 14px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product p {
+    font-size: 14px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product .info {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .wrapperDetailProduct .wrapper-detail-product .name-product {
     margin-top: 1rem;
+    font-size: 24px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .data-terjual p, .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product p {
+    font-size: 14px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .data-terjual span, .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product span {
+    font-size: 14px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .price-product p {
+    font-size: 24px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .price-product span {
+    font-size: 14px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product p {
+    font-size: 16px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product .info {
+    font-size: 12px;
   }
   .wrapper-summary {
     margin-top: 2.5rem;
   }
-  .wrapper-summary .card {
-    position: relative;
-  }
 }
 
 @media screen and (min-width: 992px) {
+  .wrapperDetailProduct .wrapper-detail-product .name-product {
+    font-size: 24px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .data-terjual p, .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product p {
+    font-size: 14px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .data-terjual span, .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product span {
+    font-size: 14px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .price-product p {
+    font-size: 28px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .price-product span {
+    font-size: 14px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product p {
+    font-size: 18px;
+  }
+  .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product .info {
+    font-size: 14px;
+  }
   .wrapper-summary {
     height: 100%;
   }
   .wrapper-summary .card {
     padding: 1.5rem;
+    position: sticky;
+    top: 144px;
   }
   .wrapper-summary .card .detail-summary .total-order p, .wrapper-summary .card .detail-summary .total-price p {
     font-size: 16px;

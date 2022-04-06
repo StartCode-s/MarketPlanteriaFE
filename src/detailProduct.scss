@@ -132,6 +132,7 @@ $secondary-color :#F6F7FB;
                 }
                 .quantity-count {
                     padding: 0 1rem;
+                    color: $font-dark-color;
                 }
                 .product-quantity {
                     width: 50px;
@@ -178,7 +179,6 @@ $secondary-color :#F6F7FB;
                 transform: translate(-50%,50%);
             }
         }
-
         .detail-summary {
             padding: 1rem 0;
             .total-order,.total-price {
@@ -239,40 +239,9 @@ $secondary-color :#F6F7FB;
 }
 
 @media screen and (min-width : 0px) {
-    .wrapperDetailProduct {
-        .wrapper-detail-product {
-            .name-product {
-                font-size: 24px;
-            }
-            .wrapper-rating {
-                .data-terjual,.rating-product {
-                    p {
-                        font-size: 14px;
-                    }
-                    span {
-                        font-size: 14px;
-                    }
-                }
-            }
-            .price-product {
-                p {
-                    font-size: 24px;
-                }
-                span {
-                    font-size: 18px;
-                }
-            }
-            .wrapper-quantity-product {
-                .info {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
     .wrapper-summary {
         .card {
-            position: sticky;
-            top: 0;
+            position: relative;
             .detail-summary {
                 .total-order,.total-price {
                     p {
@@ -301,27 +270,120 @@ $secondary-color :#F6F7FB;
         }
     }
 }
-
+@media screen and (max-width :576px) {
+    .wrapperDetailProduct {
+        .wrapper-detail-product {
+            .name-product {
+                font-size: 20px;
+            }
+            .wrapper-rating {
+                .data-terjual,.rating-product {
+                    p {
+                        font-size: 12px;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .price-product {
+                p {
+                    font-size: 24px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            .wrapper-quantity-product {
+                p {
+                    font-size: 14px;
+                }
+                .info {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width : 991px) {
     .wrapperDetailProduct {
         .wrapper-detail-product {
             .name-product {
                 margin-top: 1rem;
+                font-size: 24px;
+            }
+            .wrapper-rating {
+                .data-terjual,.rating-product {
+                    p {
+                        font-size: 14px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .price-product {
+                p {
+                    font-size: 24px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            .wrapper-quantity-product {
+                p {
+                    font-size: 16px;
+                }
+                .info {
+                    font-size: 12px;
+                }
             }
         }
     }
     .wrapper-summary {
         margin-top: 2.5rem;
-        .card {
-            position: relative;
-        }
     }
 }
 @media screen and (min-width : 992px) {
+    .wrapperDetailProduct {
+        .wrapper-detail-product {
+            .name-product {
+                font-size: 24px;
+            }
+            .wrapper-rating {
+                .data-terjual,.rating-product {
+                    p {
+                        font-size: 14px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .price-product {
+                p {
+                    font-size: 28px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            .wrapper-quantity-product {
+                p {
+                    font-size: 18px;
+                }
+                .info {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
     .wrapper-summary {
         height: 100%;
         .card {
             padding: 1.5rem;
+            position: sticky;
+            top: 144px;
             .detail-summary {
                 .total-order,.total-price {
                     p {
@@ -346,5 +408,3 @@ $secondary-color :#F6F7FB;
         }
     }
 }
-
-
