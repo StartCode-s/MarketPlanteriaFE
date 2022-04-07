@@ -146,6 +146,119 @@ $secondary-color :#F6F7FB;
             }
         }
     }
+    .wrapper-delivery {
+        .card {
+            h4 {
+                text-align: center;
+                margin-bottom: 1rem;
+                color: $font-dark-color;
+                position: relative;
+          
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 25%;
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    border-radius: 10px;
+                    background-color: $primary-color;
+                    height: 2px;
+                    transform: translate(-50%,50%);
+                }
+            }
+            .detail-summary {
+                padding: 1rem 0;
+                .total-order,.total-price {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .total-order {
+                    margin-bottom: .5rem;
+                    p {
+                        font-weight: 400;
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .total-price {
+                    p {
+                        font-weight: 400;
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    margin-right: .5rem;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 22px;
+                    max-height: 22px;
+                }
+            }
+
+            .promo-code {
+                padding: 1.2rem 0;
+                border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
+                .info-code-apply {
+                    color: #969696;
+                    padding: .5rem 0 0 0;
+                    &.danger-text {
+                        color: #da3f36;
+                    }
+                }
+            }
+            .delivery-discount {
+                padding: 1.2rem 0;
+                border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
+                .subtotal {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: .5rem;
+                    p {
+                        color: $font-dark-color;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .add-delivery-info {
+                .more-info {
+                    display: flex;
+                    justify-content: space-between;
+                    &:not(:last-child) {
+                        margin-bottom: .5rem;
+                    }
+                    p {
+                        color: #969696;
+                    }
+                    .value-discount {   
+                        display: flex;
+                        justify-content: space-between;
+                        .persen {
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+            .total-fix {
+                display: flex;
+                justify-content: space-between;
+                padding: 1.2rem 0;
+                p {
+                    color: $font-dark-color;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width : 576px) {
@@ -206,6 +319,45 @@ $secondary-color :#F6F7FB;
                     }
                 }
             }
+        }
+    }
+    .wrapper-delivery {
+        .card {
+            .button {
+                font-size: 14px !important;
+            }
+            .promo-code {
+                .input-group {
+                    .form-control {
+                        font-size: 12px !important;
+                    }
+                    .button {
+                        font-size: 12px !important;
+                    }
+                }
+                .info-code-apply {
+                    font-size: 12px !important;
+                }
+            }
+            .delivery-discount {
+                .subtotal {
+                    p {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+            .add-delivery-info {
+                .more-info {
+                    p {
+                        font-size: 12px !important;
+                    }
+                }
+            }
+            .total-fix {
+                p {
+                    font-size: 14px !important;
+                }
+            }            
         }
     }
 }
@@ -269,6 +421,41 @@ $secondary-color :#F6F7FB;
             }
         }
     }
+    .wrapper-delivery {
+        margin-top: 2rem;
+        .card {
+            .button {
+                font-size: 14px;
+            }
+            .promo-code {
+                .input-group {
+                    .form-control {
+                        font-size: 14px;
+                    }
+                    .button {
+                        font-size: 14px;
+                    }
+                }
+                .info-code-apply {
+                    font-size: 12px;
+                }
+            }
+            .delivery-discount {
+                .subtotal {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .add-delivery-info {
+                .more-info {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width : 992px) {
     .cart-container {
@@ -326,6 +513,45 @@ $secondary-color :#F6F7FB;
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    .wrapper-delivery {
+        .card {
+            .button {
+                font-size: 16px;
+            }
+            .promo-code {
+                .input-group {
+                    .form-control {
+                        font-size: 14px;
+                    }
+                    .button {
+                        font-size: 14px;
+                    }
+                }
+                .info-code-apply {
+                    font-size: 12px;
+                }
+            }
+            .delivery-discount {
+                .subtotal {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .add-delivery-info {
+                .more-info {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .total-fix {
+                p {
+                    font-size: 18px;
                 }
             }
         }

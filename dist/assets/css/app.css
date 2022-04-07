@@ -62,6 +62,7 @@ Resset Css
   background-color: #fff;
   color: #2DB878;
   text-decoration: none;
+  z-index: 2;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
@@ -788,6 +789,12 @@ input[type="checkbox"]:focus {
   border-radius: 15px;
   border: none;
   padding: 1rem;
+}
+
+@media screen and (min-width: 1400px) {
+  .card {
+    padding: 2rem;
+  }
 }
 
 .nav-tabs .nav-link {

@@ -60,6 +60,7 @@ $secondary-color :#F6F7FB;
     background-color: $white-color;
     color: $primary-color;
     text-decoration: none;
+    z-index: 2;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
     &:hover {
       background-color: $primary-color;
@@ -785,6 +786,11 @@ input[type="checkbox"]:focus{
     border-radius: 15px;
     border: none;
     padding: 1rem;
+  }
+  @media screen and (min-width :1400px) {
+    .card {
+      padding: 2rem;
+    }
   }
   
   //nav tabs
