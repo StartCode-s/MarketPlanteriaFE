@@ -19,7 +19,7 @@ Resset Css
   color: #535353;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #e7e6e6;
   padding: .5rem 0;
 }
 
@@ -55,7 +55,7 @@ Resset Css
   display: flex;
   align-items: flex-start;
   padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #e7e6e6;
 }
 
 .first-line .cart-container .body-cart .product-list .checkbox-select {
@@ -90,6 +90,7 @@ Resset Css
 
 .first-line .cart-container .body-cart .product-list .product-detail .wrapper-info-product .price-per-plant {
   color: #A5A6A9;
+  font-weight: 500;
 }
 
 .first-line .cart-container .body-cart .product-list .product-detail .wrapper-info-product .action-cart {

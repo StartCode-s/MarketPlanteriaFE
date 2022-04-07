@@ -10,6 +10,10 @@ Resset Css
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-color: #f6f7fb;
+}
+
 /*Colors palette*/
 /*Component Button*/
 .button {
@@ -407,7 +411,7 @@ input[type="checkbox"]:focus {
 /*Product Card*/
 .product {
   display: block !important;
-  background-color: #F6F7FB;
+  background-color: #FFF;
   text-decoration: none;
   border-radius: 15px;
   width: 100%;
@@ -492,7 +496,7 @@ input[type="checkbox"]:focus {
 }
 
 .categoriesContainer {
-  background-color: #F6F7FB;
+  background-color: #FFF;
   border-radius: 15px;
   padding: 1rem;
 }
@@ -785,7 +789,6 @@ input[type="checkbox"]:focus {
 }
 
 .card {
-  box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.04), 0px 0.83555px 25.0666px rgba(0, 0, 0, 0.0287542), 0px 0.44673px 13.4018px rgba(0, 0, 0, 0.0238443), 0px 0.25043px 7.51293px rgba(0, 0, 0, 0.02), 0px 0.133px 3.99006px rgba(0, 0, 0, 0.0161557), 0px 0.05535px 1.66035px rgba(0, 0, 0, 0.0112458);
   border-radius: 15px;
   border: none;
   padding: 1rem;
