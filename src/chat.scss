@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #f6f7fb;
+}
+
+/*Colors palette*/
+$primary-color : #2DB878;
+$white-color : #fff;
+$danger-color : #F2453D;
+$font-dark-color :#535353;
+$secondary-color :#FFF;
+
+
+.chat-container {
+  border-radius: 15px;
+  border: none;
+  position: relative;
+  background-color: $white-color;
+  .header-chat {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid rgb(229,231,233);
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 64px;
+      max-height: 64px;
+    }
+    .profile-chat {
+      font-size: 14px;
+      margin-left: .5rem;
+      p {
+        font-weight: 300;
+      }
+    }
+  }
+  .body-chat {
+    padding: 1.5rem;
+    max-height: 600px;
+    overflow-y: auto;
+    position: relative;
+    .line-chat {
+      display: flex;
+      margin: 1.4rem 0;
+      &.message {
+        justify-content: flex-start;
+      }
+      &.my-message {
+        flex-direction: row-reverse;
+        .profile-message {
+          margin-left: 1rem;
+          margin-right: 0;
+        }
+        .message-text {
+          border-radius: 25px 0 25px 25px;
+          background-color: #f3f4f5;
+        }
+      }
+      .message-text {
+        padding: 1rem;
+        font-size: 14px;
+        max-width: 50%;
+        border: 1px solid rgb(229,231,233);
+        border-radius: 0 25px 25px 25px;
+      }
+      .profile-message {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 1rem;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          max-width: 52px;
+          max-height: 52px;
+          object-fit: cover;
+          object-position: center;
+        }
+        .time-message {
+          margin-top: 4px;
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+    }
+    .date-message {
+      text-align: center;
+      margin: 1rem 0;
+      p {
+        font-weight: 300;
+      }
+    }
+    .message-control-container{
+      position: relative;
+      .wrapper-message-control {
+        display: flex;
+        bottom: 10px;
+        width: 100%;
+        .type-message {
+          display: flex;
+          width: 100%;
+          .insert-file-upload {
+            background-color: $primary-color;
+            padding: 1rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: .5rem;
+            img {
+              width: 100%;
+              height: 100%;
+              max-width: 18px;
+              max-height: 18px;
+            }
+            input[type="file"] {
+              display: none;
+            }
+          }
+          input {
+            width: 100%;
+            border: 1px solid rgb(229,231,233);
+            border-radius: 50px;
+            padding: .5rem 1.5rem;
+            word-wrap: break-word;
+            font-size: 14px;
+          }
+        }
+        .send-message {
+          background-color: $primary-color;
+          padding: 1rem;
+          border: none;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: .5rem;
+          img {
+            width: 100%;
+            height: 100%;
+            max-width: 18px;
+            max-height: 18px;
+          }
+        }
+      } 
+    }
+  }
+}
+
+@media screen and (max-width :768px) {
+  .chat-container {
+    .body-chat {
+      .date-message {
+        p {
+          font-size: 12px;
+        }
+      }
+      .line-chat {
+        .profile-message {
+          .time-message {
+            font-size: 12px;
+          }
+        }
+        .message-text {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width :576px) {
+  .chat-container {
+    .body-chat {
+      padding: 1rem;
+      .line-chat {
+        .message-text {
+            max-width: 80%;
+        }
+        .profile-message {
+          img {
+            max-width: 34px;
+            max-height: 34px;
+          }
+        }
+      }
+      .message-control-container {
+        .type-message {
+          input[type="text"] {
+            font-size: 12px !important; 
+          }
+        }
+      }
+    }
+  }
+}
