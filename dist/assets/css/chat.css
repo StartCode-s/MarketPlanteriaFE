@@ -121,6 +121,7 @@ body {
 
 .chat-container .body-chat .message-control-container .wrapper-message-control {
   display: flex;
+  align-items: center;
   bottom: 10px;
   width: 100%;
 }
@@ -128,6 +129,7 @@ body {
 .chat-container .body-chat .message-control-container .wrapper-message-control .type-message {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .chat-container .body-chat .message-control-container .wrapper-message-control .type-message .insert-file-upload {
@@ -143,8 +145,6 @@ body {
 .chat-container .body-chat .message-control-container .wrapper-message-control .type-message .insert-file-upload img {
   width: 100%;
   height: 100%;
-  max-width: 18px;
-  max-height: 18px;
 }
 
 .chat-container .body-chat .message-control-container .wrapper-message-control .type-message .insert-file-upload input[type="file"] {
@@ -155,12 +155,12 @@ body {
   width: 100%;
   border: 1px solid #e5e7e9;
   border-radius: 50px;
-  padding: .5rem 1.5rem;
+  padding: 1rem 1.5rem;
   word-wrap: break-word;
   font-size: 14px;
 }
 
-.chat-container .body-chat .message-control-container .wrapper-message-control .send-message {
+.chat-container .body-chat .message-control-container .wrapper-message-control .type-message .send-message {
   background-color: #2DB878;
   padding: 1rem;
   border: none;
@@ -171,11 +171,9 @@ body {
   margin-left: .5rem;
 }
 
-.chat-container .body-chat .message-control-container .wrapper-message-control .send-message img {
+.chat-container .body-chat .message-control-container .wrapper-message-control .type-message .send-message img {
   width: 100%;
   height: 100%;
-  max-width: 18px;
-  max-height: 18px;
 }
 
 @media screen and (max-width: 768px) {
