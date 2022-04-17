@@ -988,6 +988,10 @@ input[type="checkbox"]:focus {
   text-decoration: none !important;
 }
 
+.bold-text {
+  font-weight: 500 !important;
+}
+
 .card-user-menu {
   padding: 0;
 }
@@ -1058,4 +1062,20 @@ input[type="checkbox"]:focus {
   .card-user-menu .menu-profile .menu ion-icon {
     font-size: 20px;
   }
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.status.success {
+  background-color: #bbedd6;
+  color: #22a668 !important;
+}
+
+.status.danger {
+  background-color: #ffeaef;
+  color: #ef144a !important;
 }
