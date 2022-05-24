@@ -304,9 +304,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 1.5rem;
 }
 
@@ -321,7 +318,7 @@ body {
 }
 
 .modal-rating .star-wrapper .star-rating label {
-  color: #bbb;
+  color: #ebe8e8;
   font-size: 2rem;
   padding: 0;
   cursor: pointer;
