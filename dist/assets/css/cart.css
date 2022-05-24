@@ -3,7 +3,8 @@
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   outline: none;
@@ -17,22 +18,30 @@ Resset Css
 
 .first-line .cart-container .head-cart {
   color: #535353;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 1px solid #e7e6e6;
   padding: .5rem 0;
 }
 
 .first-line .cart-container .head-cart .delete-cart-button {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #F2453D;
   background-color: transparent;
+  -webkit-transition: color .2s ease;
   transition: color .2s ease;
   border: none;
 }
 
 .first-line .cart-container .head-cart .delete-cart-button:hover {
   color: #da3f36;
+  -webkit-transition: color .2s ease;
   transition: color .2s ease;
 }
 
@@ -52,8 +61,12 @@ Resset Css
 }
 
 .first-line .cart-container .body-cart .product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 1.5rem 0;
   border-bottom: 1px solid #e7e6e6;
 }
@@ -67,6 +80,8 @@ Resset Css
 }
 
 .first-line .cart-container .body-cart .product-list .product-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -75,7 +90,8 @@ Resset Css
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .first-line .cart-container .body-cart .product-list .product-detail .wrapper-info-product {
@@ -83,8 +99,12 @@ Resset Css
 }
 
 .first-line .cart-container .body-cart .product-list .product-detail .wrapper-info-product .name-price-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 
@@ -94,11 +114,17 @@ Resset Css
 }
 
 .first-line .cart-container .body-cart .product-list .product-detail .wrapper-info-product .action-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .first-line .cart-container .body-cart .product-list .product-detail .wrapper-info-product .action-cart .quantity-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -122,29 +148,39 @@ Resset Css
   color: #2DB878;
   display: inline-block;
   text-align: center;
-  appearance: textfield;
-  box-shadow: none;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 0;
   border-left: 1px solid rgba(0, 0, 0, 0.25);
   border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .first-line .cart-container .body-cart .product-list .product-detail .wrapper-info-product .action-cart .quantity-product .product-quantity::-webkit-outer-spin-button, .first-line .cart-container .body-cart .product-list .product-detail .wrapper-info-product .action-cart .quantity-product .product-quantity::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
 .first-line .cart-container .body-cart .product-list .product-detail .wrapper-info-product .action-cart .delete-cart-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #F2453D;
   background-color: transparent;
+  -webkit-transition: color .2s ease;
   transition: color .2s ease;
   border: none;
 }
 
 .first-line .cart-container .body-cart .product-list .product-detail .wrapper-info-product .action-cart .delete-cart-button:hover {
   color: #da3f36;
+  -webkit-transition: color .2s ease;
   transition: color .2s ease;
 }
 
@@ -172,7 +208,8 @@ Resset Css
   border-radius: 10px;
   background-color: #2DB878;
   height: 2px;
-  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
 }
 
 .first-line .wrapper-delivery .card .detail-summary {
@@ -180,9 +217,15 @@ Resset Css
 }
 
 .first-line .wrapper-delivery .card .detail-summary .total-order, .first-line .wrapper-delivery .card .detail-summary .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .first-line .wrapper-delivery .card .detail-summary .total-order {
@@ -206,9 +249,15 @@ Resset Css
 }
 
 .first-line .wrapper-delivery .card .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .first-line .wrapper-delivery .card .button img {
@@ -239,8 +288,12 @@ Resset Css
 }
 
 .first-line .wrapper-delivery .card .delivery-discount .subtotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: .5rem;
 }
 
@@ -250,8 +303,12 @@ Resset Css
 }
 
 .first-line .wrapper-delivery .card .add-delivery-info .more-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .first-line .wrapper-delivery .card .add-delivery-info .more-info:not(:last-child) {
@@ -263,8 +320,12 @@ Resset Css
 }
 
 .first-line .wrapper-delivery .card .add-delivery-info .more-info .value-discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .first-line .wrapper-delivery .card .add-delivery-info .more-info .value-discount .persen {
@@ -272,8 +333,12 @@ Resset Css
 }
 
 .first-line .wrapper-delivery .card .total-fix {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1.2rem 0;
 }
 
@@ -302,6 +367,8 @@ Resset Css
   }
   .cart-container .body-cart .product-list .product-detail .wrapper-info-product .name-price-product p {
     font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .cart-container .body-cart .product-list .product-detail .wrapper-info-product .name-price-product p .price {
@@ -367,6 +434,8 @@ Resset Css
   }
   .cart-container .body-cart .product-list .product-detail .wrapper-info-product .name-price-product p {
     font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .cart-container .body-cart .product-list .product-detail .wrapper-info-product .name-price-product p .price {
@@ -432,6 +501,8 @@ Resset Css
   }
   .cart-container .body-cart .product-list .product-detail .wrapper-info-product .name-price-product p {
     font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .cart-container .body-cart .product-list .product-detail .wrapper-info-product .name-price-product p .price {
@@ -476,3 +547,4 @@ Resset Css
     font-size: 18px;
   }
 }
+/*# sourceMappingURL=cart.css.map */

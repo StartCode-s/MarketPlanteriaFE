@@ -3,7 +3,8 @@
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   outline: none;
@@ -12,10 +13,19 @@ Resset Css
 
 /*Colors palette*/
 .profile-data .profile-images-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .profile-data .profile-images-wrapper .profile-image {
@@ -28,8 +38,10 @@ Resset Css
   max-width: 164px;
   max-height: 164px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .profile-data .profile-images-wrapper .button-change-image {
@@ -111,3 +123,4 @@ Resset Css
     font-size: 12px;
   }
 }
+/*# sourceMappingURL=profile.css.map */

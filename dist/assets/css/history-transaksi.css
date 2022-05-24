@@ -3,7 +3,8 @@
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   outline: none;
@@ -25,8 +26,12 @@ body {
 }
 
 .history-item .head-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -48,6 +53,8 @@ body {
 }
 
 .history-item .body-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -61,7 +68,8 @@ body {
   width: 100%;
   height: 100%;
   max-width: 86px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 10px;
 }
 
@@ -88,8 +96,12 @@ body {
 }
 
 .history-item .body-item .detail-item .action-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .history-item .body-item .detail-item .action-item button:not(:last-child) {
@@ -205,9 +217,15 @@ body {
 }
 
 .modal-tracking .modal-dialog .modal-content .modal-body .process-tracking .tracking-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 1rem;
 }
 
@@ -226,8 +244,12 @@ body {
 }
 
 .modal-tracking .modal-dialog .modal-content .modal-body .tracking {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modal-tracking .modal-dialog .modal-content .modal-body .tracking .date {
@@ -256,12 +278,14 @@ body {
   position: relative;
   top: 2px;
   z-index: 2;
-  box-shadow: 0 0 0 4px var(--N75, #E5E7E9);
+  -webkit-box-shadow: 0 0 0 4px var(--N75, #E5E7E9);
+          box-shadow: 0 0 0 4px var(--N75, #E5E7E9);
 }
 
 .modal-tracking .modal-dialog .modal-content .modal-body .tracking .process-track .bullets-track.now-proccess {
   background-color: #2DB878;
-  box-shadow: 0 0 0 4px var(--G200, #D6FFDE);
+  -webkit-box-shadow: 0 0 0 4px var(--G200, #D6FFDE);
+          box-shadow: 0 0 0 4px var(--G200, #D6FFDE);
 }
 
 .modal-tracking .modal-dialog .modal-content .modal-body .tracking .process-track .line-track {
@@ -274,6 +298,41 @@ body {
 
 .modal-tracking .modal-dialog .modal-content .modal-body .tracking:last-child .line-track {
   display: none;
+}
+
+.modal-rating .star-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-rating .star-wrapper .star-rating {
+  direction: rtl;
+  display: inline-block;
+  cursor: default;
+}
+
+.modal-rating .star-wrapper .star-rating input[type="radio"] {
+  display: none;
+}
+
+.modal-rating .star-wrapper .star-rating label {
+  color: #bbb;
+  font-size: 2rem;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-rating .star-wrapper .star-rating label:hover,
+.modal-rating .star-wrapper .star-rating label:hover ~ label,
+.modal-rating .star-wrapper .star-rating input[type="radio"]:checked ~ label {
+  color: #f2b600;
 }
 
 @media screen and (max-width: 767px) {
@@ -359,3 +418,4 @@ body {
     margin-right: .5rem;
   }
 }
+/*# sourceMappingURL=history-transaksi.css.map */

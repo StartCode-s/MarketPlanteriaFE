@@ -3,7 +3,8 @@
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   outline: none;
@@ -22,14 +23,16 @@ Resset Css
 .wrapperDetailProduct .wrapper-image-product .view-Images .images-product img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 15px !important;
 }
 
 .wrapperDetailProduct .wrapper-image-product .nav-images .images-nav img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 4px !important;
 }
 
@@ -51,12 +54,16 @@ Resset Css
 }
 
 .wrapperDetailProduct .wrapper-detail-product .wrapper-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 1rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .data-terjual, .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -86,9 +93,15 @@ Resset Css
 
 .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product .icon {
   margin-right: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrapperDetailProduct .wrapper-detail-product .wrapper-rating .rating-product p {
@@ -115,6 +128,8 @@ Resset Css
 
 .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product .quantity-product {
   padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -139,15 +154,19 @@ Resset Css
   color: #2DB878;
   display: inline-block;
   text-align: center;
-  appearance: textfield;
-  box-shadow: none;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 0;
   border-left: 1px solid rgba(0, 0, 0, 0.25);
   border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product .quantity-product .product-quantity::-webkit-outer-spin-button, .wrapperDetailProduct .wrapper-detail-product .wrapper-quantity-product .quantity-product .product-quantity::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -176,7 +195,8 @@ Resset Css
   border-radius: 10px;
   background-color: #2DB878;
   height: 2px;
-  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
 }
 
 .wrapper-summary .card .detail-summary {
@@ -184,9 +204,15 @@ Resset Css
 }
 
 .wrapper-summary .card .detail-summary .total-order, .wrapper-summary .card .detail-summary .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper-summary .card .detail-summary .total-order {
@@ -210,9 +236,15 @@ Resset Css
 }
 
 .wrapper-summary .card .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrapper-summary .card .button img {
@@ -348,6 +380,7 @@ Resset Css
   }
   .wrapper-summary .card {
     padding: 1.5rem;
+    position: -webkit-sticky;
     position: sticky;
     top: 144px;
   }
@@ -364,3 +397,4 @@ Resset Css
     font-size: 16px;
   }
 }
+/*# sourceMappingURL=detailProduct.css.map */
