@@ -764,6 +764,9 @@ input[type="checkbox"]:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .categoriesContainer .wrapperCategories .categoriesPlant .nameCategories span {
@@ -1120,6 +1123,10 @@ input[type="checkbox"]:focus {
 
 .bold-text {
   font-weight: 500 !important;
+}
+
+.thint-text {
+  font-weight: 300 !important;
 }
 
 .card-user-menu {

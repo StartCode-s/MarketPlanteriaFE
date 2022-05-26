@@ -657,6 +657,7 @@ input[type="checkbox"]:focus{
           .nameCategories {
               color: $font-dark-color;
               display: flex;
+              align-items: center;
               span {
                   margin-left: .2rem;
                   color: $font-dark-color !important;
@@ -977,6 +978,9 @@ input[type="checkbox"]:focus{
 }
 .bold-text {
   font-weight: 500 !important;
+}
+.thint-text {
+  font-weight: 300 !important;
 }
 
 //Card Profile Menu

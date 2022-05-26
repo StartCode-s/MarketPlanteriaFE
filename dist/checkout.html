@@ -175,15 +175,114 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="tab-pane fade" id="nav-paymentConfirmation" role="tabpanel" aria-labelledby="nav-paymentConfirmation-tab">
-                            <div class="detail-user">
-                                <h6>Reksa Prayoga</h6>
-                                <p>6281290053372</p>
-                                <p class="address">Jl. Sumur Batu Raya No.50, RT.4/RW.2, Sumur Batu, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810</p>
-                            </div>
-                            <div class="shipping-methode">
-                                
-                            </div>
+                        <div class="tab-pane fade paymentConfirmation" id="nav-paymentConfirmation" role="tabpanel" aria-labelledby="nav-paymentConfirmation-tab">
+                            <div class="row">
+                                <div class="col-12 col-lg-8">
+                                    <div class="detail-customer">
+                                        <h5 class="name-customer">Reksa Prayoga</h5>
+                                        <p class="number-phone">+628127386123</p>
+                                        <p class="address">Jl. Sumur Batu Raya No.50, RT.4/RW.2, Sumur Batu, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810</p>
+                                    </div>
+                                    <div class="shipping-methode">
+                                        <h5>Shipping Methode</h5>
+                                        <p>Please select the shipping you want.</p>
+                                        <form action="">
+                                            <div class="wrapper-select-methode">
+                                                <div class="methode me-2">
+                                                    <input type="radio" id="planeMethode" name="flexRadioDefault">
+                                                    <label for="planeMethode">
+                                                        <div class="name-shipping-methode">
+                                                            <ion-icon name="airplane"></ion-icon>
+                                                            <h6>Plane</h6>
+                                                        </div>
+                                                        <p class="price-methode">60$</p>
+                                                        <p class="desc-methode">Estimated arrival tomorrow</p>
+                                                    </label>
+                                                </div>
+                                                <div class="methode">
+                                                    <input type="radio" id="cargoMethode" name="flexRadioDefault">
+                                                    <label for="cargoMethode">
+                                                        <div class="name-shipping-methode">
+                                                            <ion-icon name="car"></ion-icon>
+                                                            <h6>Cargo</h6>
+                                                        </div>
+                                                        <p class="price-methode">60$</p>
+                                                        <p class="desc-methode">Estimated arrival tomorrow</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="shipping-detail">
+                                        <h5>Your Shooping</h5>
+                                        <p>Make sure your purchases are correct</p>
+
+                                        <div class="wrapper-item">
+                                            <div class="item">
+                                                <div class="images-item">
+                                                    <img src="./assets/img/images_plant_example.png" alt="">
+                                                </div>
+                                                <div class="detail-item">
+                                                    <h5>Eriocaulon Cinereum Eriocaulon Cinereum High Quality Aquatic Plants</h5>
+                                                    <h6>$ 100</h6>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="images-item">
+                                                    <img src="./assets/img/images_plant_example.png" alt="">
+                                                </div>
+                                                <div class="detail-item">
+                                                    <h5>Eriocaulon Cinereum Eriocaulon Cinereum High Quality Aquatic Plants</h5>
+                                                    <h6>$ 100</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="wrapper-summary">
+                                        <form action="">
+                                            <div class="card">
+                                                <h4>Summary</h4>
+                                                <div class="detail-summary">
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <p class="thint-text">Subtotal</p>
+                                                        <p class="thint-text">$300</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <p class="thint-text">Discount</p>
+                                                        <p class="thint-text">(20%) - $60</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <p class="thint-text">Shipping Fee</p>
+                                                        <p class="thint-text">$30</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <p class="thint-text">Other costs</p>
+                                                        <p class="thint-text">$2</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <p class="bold-text">Total</p>
+                                                        <p class="bold-text">$272</p>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown">
+                                                    <button class="button button-primary w-100 d-flex align-items-center justify-content-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      Select Payment
+                                                    <ion-icon class="ms-2" name="chevron-down-outline"></ion-icon>
+
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                      <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalManualTransfer">Manual Transfer</button>
+                                                      <button class="dropdown-item" data-bs-toggle="modalPaypalMethode" data-bs-target="#modalPaypalMethode">Paypal</button>
+                                                      <button class="dropdown-item" data-bs-toggle="modalMidtransMethode" data-bs-target="#modalMidtransMethode">Midtrans</button>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                </div>
@@ -191,6 +290,173 @@
         </div>
     </div>
 
+
+    <!--Modal manual transfer Section-->
+    <div class="modal fade modalManualTransfer" id="modalManualTransfer" aria-hidden="true" aria-labelledby="modalManualTransferToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalManualTransferToggleLabel">Manual Transfer</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <button type="button" class="button d-flex align-items-center justify-content-between w-100 mb-2" data-bs-toggle="modal" data-bs-target="#usDollarManualTransfer">
+                    <div class="icon-name d-flex align-items-center thint-text">
+                        <div class="icon me-2">
+                            <img src="./assets/img/icon/currency-dollar.png" alt="">
+                        </div>
+                        Us Dollar Currency
+                    </div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+                <button type="button" class="button d-flex align-items-center justify-content-between w-100 mb-2" data-bs-toggle="modal" data-bs-target="#euroManualTransfer">
+                    <div class="icon-name d-flex align-items-center thint-text">
+                        <div class="icon me-2">
+                            <img src="./assets/img/icon/currency-euro.png" alt="">
+                        </div>
+                        Euro Currency
+                    </div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+                <button type="button" class="button d-flex align-items-center justify-content-between w-100 mb-2" data-bs-toggle="modal" data-bs-target="#asa">
+                    <div class="icon-name d-flex align-items-center thint-text">
+                        <div class="icon me-2">
+                            <img src="./assets/img/icon/currency-british.png" alt="">
+                        </div>
+                        British Pound Currency
+                    </div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+                <button type="button" class="button d-flex align-items-center justify-content-between w-100" data-bs-toggle="modal" data-bs-target="#asa">
+                    <div class="icon-name d-flex align-items-center thint-text">
+                        <div class="icon me-2">
+                            <img src="./assets/img/icon/currency-canadian.png" alt="">
+                        </div>
+                        Canadian Currency
+                    </div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+        <!--US Dollar - Manual transfer-->
+        <div class="modal fade nextStepModalManualPayment" id="usDollarManualTransfer" aria-hidden="true" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="d-flex align-items-center back-modal">
+                            <div class="me-2 d-flex align-items-center" data-bs-target="#modalManualTransfer" data-bs-toggle="modal">
+                                <ion-icon name="chevron-back-outline"></ion-icon>
+                            </div>
+                            <h5 class="modal-title" id="exampleModalToggleLabel2">Manual Transfer</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="thint-text">Total Bill</p>
+                                <p class="primary-text">$270</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-head">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="bold-text">US Dollar</p>
+                                    <img src="./assets/img/icon/currency-dollar.png" alt="">
+                                </div> 
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Transfer to account number <span class="bold-text">038576846</span> in the name of Ajat Supriana.</li>
+                                    <li>Make sure the transfer is successful.</li>
+                                    <li>Screenshot of proof of transfer.</li>
+                                    <li>Submit Proof of Transfer below.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <form action="">
+                            <div class="proof-payment ">
+                                <p>Enter Proof of Transfer</p>
+                                <input type="file" id="proofFile">
+                                <label for="proofFile">
+                                    <div class="card">
+                                        <ion-icon name="cloud-upload-outline"></ion-icon>
+                                    </div>
+                                </label>
+
+                                <button type="submit" class="button button-primary w-100">Pay</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#modalManualTransfer" data-bs-toggle="modal">Back to first</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!--Euro - Manual transfer-->
+        <div class="modal fade nextStepModalManualPayment" id="euroManualTransfer" aria-hidden="true" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="d-flex align-items-center back-modal">
+                            <div class="me-2 d-flex align-items-center" data-bs-target="#modalManualTransfer" data-bs-toggle="modal">
+                                <ion-icon name="chevron-back-outline"></ion-icon>
+                            </div>
+                            <h5 class="modal-title" id="exampleModalToggleLabel2">Manual Transfer</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="thint-text">Total Bill</p>
+                                <p class="primary-text">$270</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-head">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="bold-text">Euro</p>
+                                    <img src="./assets/img/icon/currency-euro.png" alt="">
+                                </div> 
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Transfer to account number 038576846 in the name of Ajat Supriana.</li>
+                                    <li>Make sure the transfer is successful.</li>
+                                    <li>Screenshot of proof of transfer.</li>
+                                    <li>Submit Proof of Transfer below.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <form action="">
+                            <div class="proof-payment ">
+                                <p>Enter Proof of Transfer</p>
+                                <input type="file" id="proofFile">
+                                <label for="proofFile">
+                                    <div class="card">
+                                        <ion-icon name="cloud-upload-outline"></ion-icon>
+                                    </div>
+                                </label>
+
+                                <button type="submit" class="button button-primary w-100">Pay</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#modalManualTransfer" data-bs-toggle="modal">Back to first</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
     
 
 
@@ -203,4 +469,9 @@
         <!--Slick Js-->
         <script src="./assets/vendor/slick/slick.min.js"></script>
         <script src="./assets/vendor/slick/slick.js"></script>
+        <!--ion icon-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        
 </html>
