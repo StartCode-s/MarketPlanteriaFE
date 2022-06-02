@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #f6f7fb;
+}
+
+/*Colors palette*/
+$primary-color : #2DB878;
+$white-color : #fff;
+$danger-color : #F2453D;
+$font-dark-color :#535353;
+$secondary-color :#FFF;
+
+#mainContent {
+    margin-top: 94px;
+    .banner-title {
+        background: url(/dist/assets/img/background-content.png);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50vh;
+        background-position: bottom;
+        flex-direction: column;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .title {
+            margin-bottom: .5rem;
+            color: $font-dark-color;
+        }
+        .breadchumb-wrapper {
+            display: flex;
+            font-size: 14px;
+            a {
+                text-decoration: none;
+                font-weight: 600;
+                color: $font-dark-color;
+            }
+            span {
+                padding: .0 4px;
+            }
+            p {
+                font-weight: 300;
+            }
+        }
+    }
+}
+@media screen and (max-width :991px) {
+    #mainContent {
+        margin-top: 148px;
+    }
+}
+
+//faq section
+.faq-section {
+    padding: 4rem 0;
+    .illustration {
+        svg {
+            width: 100%;
+        }
+    }
+    .wrapper-faq {
+        .titleAccordion {
+            color: $font-dark-color;
+            font-weight: 600;
+            position: relative;
+            margin-bottom: 1.4rem;
+            width: fit-content;
+            &::before {
+                content: '';
+                display: block;
+                height: 3px;
+                width: 50%;
+                background-color: $primary-color;
+                position: absolute;
+                bottom: -5px;
+                border-radius: 2px;
+            }
+        }
+        .accordion {
+            .accordion-item {
+                background-color: transparent !important;
+                border-bottom: 1px dashed #535353;
+                .accordion-header {
+                    .accordion-button  {
+                        background-color: transparent !important;
+                        box-shadow: none;
+                        padding: 1rem 0;
+                        font-size: 18px;
+                        color: $font-dark-color;
+                        ion-icon {
+                            transition: .3s ease;
+                            transform: rotate(180deg) !important;
+                        }
+                        &:not(.collapsed) {
+                            color: $primary-color;
+                            ion-icon {
+                                transition: .3s ease;
+                                transform: rotate(0deg) !important;
+                            }
+                        }
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+                .accordion-collapse {
+                    .accordion-body {
+                        font-size: 14px;
+                        padding: 0 0 1rem 0;
+                        color: $font-dark-color;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width :576px) {
+    .faq-section {
+        .wrapper-faq {
+            .accordion {
+                .accordion-item {
+                    .accordion-header {
+                        .accordion-button  {
+                            font-size: 14px;
+                        }
+                    }
+                    .accordion-collapse {
+                        .accordion-body {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
